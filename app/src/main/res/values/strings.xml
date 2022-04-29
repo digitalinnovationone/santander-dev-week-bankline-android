@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">bankline-android</string>
+
+    <string name="txt_hello_world">Hello World!</string>
+</resources>
