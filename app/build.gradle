@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    // Reference: https://developer.android.com/kotlin/parcelize
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -28,6 +30,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    // Reference: https://developer.android.com/topic/libraries/view-binding
+    buildFeatures {
+        viewBinding true
     }
 }
 

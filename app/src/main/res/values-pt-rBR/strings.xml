@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="txt_hello_world">Olá Mundo!</string>
+    <string name="txt_welcome">Olá, bem-vindo(a) à Santander Dev Week! Digite um ID do Correntista para visualizar seu extrato bancário:</string>
+    <string name="txt_continue">Continuar</string>
 </resources>
