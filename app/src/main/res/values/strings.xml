@@ -3,4 +3,5 @@
 
     <string name="txt_welcome">Hello, welcome to Santander Dev Week! Enter an Account Holder ID to view your bank statement:</string>
     <string name="txt_continue">Continue</string>
+    <string name="txt_account_holder_id">Account Holder ID</string>
 </resources>
