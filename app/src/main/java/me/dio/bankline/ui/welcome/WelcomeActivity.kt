@@ -19,9 +19,13 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btContinue.setOnClickListener {
+            //TODO Melhoria (fácil): validar o preenchimento do ID do Correntista, exibindo um Snackbar em caso de erro.
+            //TODO Melhoria (difícil): evoluir a API para recuperar um Correntista por ID, permitindo assim o envio de mais informações para a próxima tela.
+
             val accountHolderId = binding.etAccountHolderId.text.toString().toInt()
             val accountHolder = Correntista(accountHolderId)
 
+            // Reference: https://developer.android.com/training/basics/firstapp/starting-activity
             val intent = Intent(this, BankStatementActivity::class.java).apply {
                 putExtra(BankStatementActivity.EXTRA_ACCOUNT_HOLDER, accountHolder)
             }

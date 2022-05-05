@@ -27,4 +27,8 @@ object BanklineRepository {
             emit(State.Error(e.message))
         }
     }
+
+    //TODO Melhoria (difícil): Incluir o Room para persistência local das Movimentações.
+    //Para isso, nosso Repository pode evoluir negocialmente para expor os dados locais via LiveData através do Room.
+    //Assim, o App poderá funcionar offline, apresentando as Movimentações da última requisição HTTP realizada com sucesso.
 }

@@ -39,6 +39,9 @@ class BankStatementActivity : AppCompatActivity() {
         findBankStatement()
 
         binding.srlBankStatement.setOnRefreshListener { findBankStatement() }
+
+        //TODO Melhoria (difícil): Incluir a funcionalidade de pesquisar na nossa ActionBar:
+        //Referência: https://developer.android.com/training/search/setup
     }
 
     private fun findBankStatement() {
